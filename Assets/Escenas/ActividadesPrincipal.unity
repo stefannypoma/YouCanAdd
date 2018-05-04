@@ -2541,6 +2541,7 @@ GameObject:
   - component: {fileID: 2128225513}
   - component: {fileID: 2128225512}
   - component: {fileID: 2128225514}
+  - component: {fileID: 2128225515}
   - component: {fileID: 2128225511}
   - component: {fileID: 2128225510}
   - component: {fileID: 2128225509}
@@ -2648,3 +2649,16 @@ MonoBehaviour:
   audioDiez: {fileID: 834737893}
   audioCorrecto: {fileID: 228293090}
   audioFallo: {fileID: 1904927389}
+--- !u!114 &2128225515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2128225508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57de9c88f2b8342bd83378c01871e6dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shader: {fileID: 0}
+  color: {r: 0, g: 0, b: 0, a: 0}
