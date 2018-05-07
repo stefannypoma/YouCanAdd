@@ -20,11 +20,12 @@ public class Dibujar : MonoBehaviour {
 
 		r.transform.SetParent (transform);
 
-		r.material = new Material (shader);
+        r.material = new Material(shader)
+        {
+            color = color
+        };
 
-		r.material.color = color;
-
-		r.SetWidth (0.5f, 0.5f);
+        r.SetWidth (0.5f, 0.5f);
 
 		List<Vector3> posiciones = new List<Vector3> ();
 

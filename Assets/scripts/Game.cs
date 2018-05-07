@@ -12,9 +12,9 @@ public class Game : MonoBehaviour {
 
     public enum Mode { DIEZ, VIENTE }
 
-    public Image leftImage;
-    public Image middleImage;
-    public Image rightImage;
+    public SpriteRenderer leftSprite;
+    public SpriteRenderer middleSprite;
+    public SpriteRenderer rightSprite;
     public Text text;
     public System.Random rnd;
     public AudioSource audioUno;
@@ -33,7 +33,7 @@ public class Game : MonoBehaviour {
     public Mode modo;
 
     private Answer[] availableAnswers;
-    private Image[] images;
+    private SpriteRenderer[] images;
     private int correctPosition;
     private AudioSource source;
     private Boolean isAudioPlaying = false;
@@ -56,7 +56,7 @@ public class Game : MonoBehaviour {
         FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("https://youcanadd-ffbe4.firebaseio.com");
 
         rnd = new System.Random();
-        this.images = new Image[3] { leftImage, middleImage, rightImage };
+        this.images = new SpriteRenderer[3] { leftSprite, middleSprite, rightSprite };
 
         if (this.modo == Mode.DIEZ)
         {
