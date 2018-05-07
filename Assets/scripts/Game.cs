@@ -37,6 +37,7 @@ public class Game : MonoBehaviour {
     private int correctPosition;
     private AudioSource source;
     private Boolean isAudioPlaying = false;
+    private Coordinator coordinator;
 
     private float time;
     private string timerString;
@@ -54,8 +55,8 @@ public class Game : MonoBehaviour {
     void Start()
     {
         FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("https://youcanadd-ffbe4.firebaseio.com");
-
-        rnd = new System.Random();
+        
+        this.rnd = new System.Random();
         this.images = new SpriteRenderer[3] { leftSprite, middleSprite, rightSprite };
 
         if (this.modo == Mode.DIEZ)
