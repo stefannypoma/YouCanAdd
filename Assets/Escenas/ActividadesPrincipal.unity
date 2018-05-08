@@ -2655,10 +2655,10 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2128225508}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 57de9c88f2b8342bd83378c01871e6dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shader: {fileID: 0}
-  color: {r: 0, g: 0, b: 0, a: 0}
+  shader: {fileID: 10755, guid: 0000000000000000f000000000000000, type: 0}
+  color: {r: 0.97794116, g: 0.92884576, b: 0.26605755, a: 0}
