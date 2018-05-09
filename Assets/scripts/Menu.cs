@@ -21,4 +21,8 @@ public class Menu : MonoBehaviour {
     {
         SceneManager.LoadScene("PracticarNumeros1");
     }
+	public void OpenArrastrar()
+	{
+		SceneManager.LoadScene("ArrastrarPrincipal");
+	}
 }

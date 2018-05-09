@@ -6,20 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Escenas/PantallaPrincipal.unity
-    guid: ff0fbdab6ff4346dc9d5b3500c31966b
-  - enabled: 0
-    path: Assets/Escenas/PantallaPrincipal.unity
-    guid: ff0fbdab6ff4346dc9d5b3500c31966b
-  - enabled: 1
     path: Assets/Escenas/Aprender.unity
     guid: b0e792c8445424326bc7509eef324224
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Escenas/AprenderNumeros1.unity
     guid: f30a0f198442044369c3bfbb76b05135
@@ -84,38 +72,14 @@ EditorBuildSettings:
     path: Assets/Escenas/PracticarNumeros10.unity
     guid: ef4500f90e0c50545b0ed4d65daea4af
   - enabled: 1
-    path: Assets/Escenas/Actividades1.unity
-    guid: 855662350c4f74502856a9111c586f4c
-  - enabled: 1
-    path: Assets/Escenas/Actividades2.unity
-    guid: 81d4e0a3badb641338f2d15010f9c5b6
-  - enabled: 1
-    path: Assets/Escenas/Actividades3.unity
-    guid: 58f08fe39ab3246b397a1075269c0110
-  - enabled: 1
-    path: Assets/Escenas/Actividades4.unity
-    guid: 83a885fdb7cd6432dbdcd1e367c18cfb
-  - enabled: 1
     path: Assets/Escenas/Actividades5.unity
     guid: ea3e7e14de1044226a8582987fbac071
-  - enabled: 1
-    path: Assets/Escenas/Actividades6.unity
-    guid: a13e04e752437436a9cf7d918b2db15b
-  - enabled: 1
-    path: Assets/Escenas/Actividades7.unity
-    guid: 2cfe0d0b313184ca7b31a384b80d5f8a
-  - enabled: 1
-    path: Assets/Escenas/Actividades8.unity
-    guid: eace195217da74b2e9d0caa817582e29
-  - enabled: 1
-    path: Assets/Escenas/Actividades9.unity
-    guid: e13ff17e1ab5445228dd4fe4614b3df8
-  - enabled: 1
-    path: Assets/Escenas/Actividades10.unity
-    guid: c068cbddbda32486da79e532245c76b1
   - enabled: 1
     path: Assets/Escenas/ActividadesPrincipal.unity
     guid: 53cc154763e0c0e4e8b19ae0fa04e2d5
   - enabled: 1
     path: Assets/Escenas/ActividadesPrincipalOnce.unity
     guid: 5e65d233b349f0a4285757b5a017a6aa
+  - enabled: 1
+    path: Assets/Escenas/ArrastrarPrincipal.unity
+    guid: 682920dcb8d0aa54896a960c9497d307
