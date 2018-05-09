@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 224484241961092262}
   - component: {fileID: 222846569172171814}
   - component: {fileID: 114135565080323638}
+  - component: {fileID: 114249942320634216}
+  - component: {fileID: 225808885994188980}
   m_Layer: 5
   m_Name: sapito
   m_TagString: Untagged
@@ -55,6 +57,17 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114249942320634216
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1205818206351750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8463b894c70a8464396759fb0a80781e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!222 &222846569172171814
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -79,3 +92,14 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &225808885994188980
+CanvasGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1205818206351750}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0

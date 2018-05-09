@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 224437872847248816}
   - component: {fileID: 222086262681222052}
   - component: {fileID: 114479455351978496}
+  - component: {fileID: 225114507535081380}
+  - component: {fileID: 114353824507546876}
   m_Layer: 5
   m_Name: abejita
   m_TagString: Untagged
@@ -28,6 +30,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &114353824507546876
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1108471228500712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8463b894c70a8464396759fb0a80781e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114479455351978496
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -79,3 +92,14 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &225114507535081380
+CanvasGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1108471228500712}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0

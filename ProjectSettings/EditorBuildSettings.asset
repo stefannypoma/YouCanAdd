@@ -83,3 +83,33 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Escenas/ArrastrarPrincipal.unity
     guid: 682920dcb8d0aa54896a960c9497d307
+  - enabled: 1
+    path: Assets/Escenas/Arrastrar2.unity
+    guid: ca502dc82b3db46428c6d3be499d8111
+  - enabled: 1
+    path: Assets/Escenas/Arrastrar3.unity
+    guid: 98bc2e5508dac4dfea539be9decd7f0d
+  - enabled: 1
+    path: Assets/Escenas/Arrastrar4.unity
+    guid: 698017a7e31af435787a90f41ace07d4
+  - enabled: 1
+    path: Assets/Escenas/Arrastrar5.unity
+    guid: 7ce33092cff504bcea582cafb87a1cfa
+  - enabled: 1
+    path: Assets/Escenas/Arrastrar6.unity
+    guid: df4a624bf70824ee19c1254e3964cc4b
+  - enabled: 1
+    path: Assets/Escenas/Arrastrar7.unity
+    guid: 50e471a67cd6741d787561bb2e49da29
+  - enabled: 1
+    path: Assets/Escenas/Arrastrar8.unity
+    guid: da3d0c7eb06b74020a2ed7a3bc8f55d6
+  - enabled: 1
+    path: Assets/Escenas/Arrastrar9.unity
+    guid: 839b1ca3b10364e66a38279ed5c29bc5
+  - enabled: 1
+    path: Assets/Escenas/Arrastrar10.unity
+    guid: 1338698f975614d24a092bb5b44864d1
+  - enabled: 1
+    path: Assets/Escenas/PantallaPrincipal.unity
+    guid: ff0fbdab6ff4346dc9d5b3500c31966b
