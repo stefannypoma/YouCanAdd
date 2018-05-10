@@ -37,7 +37,6 @@ public class Game : MonoBehaviour {
     private int correctPosition;
     private AudioSource source;
     private Boolean isAudioPlaying = false;
-    private Coordinator coordinator;
 
     private float time;
     private string timerString;
@@ -116,7 +115,7 @@ public class Game : MonoBehaviour {
         text.text = answers[correctPosition].name;
         answers[correctPosition].audio.Play();
         time = 0;
-
+        
         currentGameReference = FirebaseDatabase.DefaultInstance.RootReference.Child("games").Push();
         currentGameReference.Child("fecha").SetValueAsync(DateTime.Now.ToString());
         currentGameReference.Child("numero").SetValueAsync(answers[correctPosition].name);

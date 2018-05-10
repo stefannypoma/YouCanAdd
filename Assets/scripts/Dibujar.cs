@@ -1,59 +1,73 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 public class Dibujar : MonoBehaviour {
+    public Transform basedot;
+    public KeyCode mouseleft;
 
-	public Shader shader;
-	public Color color;
-
-    private List<LineRenderer> lineRenderers;
-    private Coordinator coordinator;
+    private List<GameObject> dots;
+    private Vector2 previousVector;
 
     void Start()
     {
-        this.coordinator = Coordinator.GetInstance();
-        this.coordinator.SetOnNext(DeleteLineRenderers);
+        dots = new List<GameObject>();
     }
 
-	void Update () {
-		if (Input.GetMouseButtonDown (0)) {
-			StartCoroutine (dibujar ());
-		}
-	}
-
-    private void DeleteLineRenderers()
+    void Update()
     {
-        foreach (LineRenderer line in this.lineRenderers)
+        if (Input.GetKey(mouseleft))
         {
-            Destroy(line);
+            Vector2 currentVector = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+            float distance = Vector2.Distance(previousVector, currentVector);
+            if (distance > 0.5)
+            {
+                List<Vector2> vectors = new List<Vector2>() { currentVector };
+                if (distance > 1 && previousVector != Vector2.zero)
+                {
+                    float dx = currentVector.x - previousVector.x;
+                    float dy = currentVector.y - previousVector.y;
+
+                    float biggest = Math.Abs(dy);
+                    if (Math.Abs(dx) > biggest) biggest = Math.Abs(dx);
+
+                    float interval = biggest / 2f;
+
+                    float incX = dx / interval;
+                    float incY = dy / interval;
+
+                    float indicator = 0;
+                    float x = currentVector.x;
+                    float y = currentVector.y;
+                    while (Math.Abs(indicator) < Math.Abs(dx))
+                    {
+                        indicator += incX;
+                        x += incX;
+                        y += incY;
+                        Vector2 vector = new Vector2(x, y);
+                        vectors.Add(vector);
+                    }
+                }               
+
+                foreach(Vector2 vector in vectors)
+                {
+                    Vector2 objPosition = Camera.main.ScreenToWorldPoint(vector);
+                    GameObject t = Instantiate(basedot, objPosition, basedot.rotation).gameObject;
+                    this.dots.Add(t);
+                }                
+            }
+            this.previousVector = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+        } else
+        {
+            previousVector = Vector2.zero;
         }
     }
 
-	IEnumerator dibujar (){
-
-		LineRenderer r = new GameObject ().AddComponent<LineRenderer> ();
-        
-		r.transform.SetParent (transform);
-
-        r.material = new Material(shader)
+    public void Borrar()
+    {
+        foreach(GameObject t  in this.dots)
         {
-            color = color
-        };
-
-        r.SetWidth (0.1f, 0.1f);
-
-		List<Vector3> posiciones = new List<Vector3> ();
-        
-        while (Input.GetMouseButton (0)) {
-			posiciones.Add (Camera.main.ScreenToWorldPoint (Input.mousePosition) + Vector3.forward * 5);
-
-			r.SetVertexCount (posiciones.Count);
-
-			r.SetPositions (posiciones.ToArray());
-
-			yield return new WaitForSeconds (0);
-		}        
+            Destroy(t);
+        }
     }
 }
