@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Escenas/PantallaPrincipal.unity
+    guid: ff0fbdab6ff4346dc9d5b3500c31966b
+  - enabled: 1
     path: Assets/Escenas/Aprender.unity
     guid: b0e792c8445424326bc7509eef324224
   - enabled: 1
@@ -110,6 +113,3 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Escenas/Arrastrar10.unity
     guid: 1338698f975614d24a092bb5b44864d1
-  - enabled: 1
-    path: Assets/Escenas/PantallaPrincipal.unity
-    guid: ff0fbdab6ff4346dc9d5b3500c31966b
